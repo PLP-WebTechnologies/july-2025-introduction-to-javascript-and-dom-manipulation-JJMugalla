@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color:greenyellow;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#description {
+    color: blue;
+    text-align: center;
+    margin: 10px 0;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item {
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.box {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
